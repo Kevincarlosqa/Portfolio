@@ -58,7 +58,7 @@ const ParticlesContact = () => {
             enable: true,
             out_mode: "out",
             random: true,
-            speed: 0.3,
+            speed: 1,
             straight: false,
           },
           number: { density: { enable: true, value_area: 800 }, value: 160 },
