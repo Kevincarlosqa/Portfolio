@@ -227,9 +227,9 @@ const About = () => {
             className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4
             items-center xl:items-start"
           >
-            {aboutData[index].info.map((item, itemIndex) => (
+            {aboutData[index].info.map((item, itemInd) => (
               <div
-                key={itemIndex}
+                key={itemInd}
                 className="flex-1 flex flex-col md:flex-row 
               max-w-max gap-x-2 items-center text-white/60"
               >
@@ -239,8 +239,8 @@ const About = () => {
                 <div>{item.stage}</div>
                 <div className="flex gap-x-4">
                   {/* icons */}
-                  {item.icons?.map((icon, itemIndex) => (
-                    <div key={itemIndex} className="text-2xl text-white">
+                  {item.icons?.map((icon, itemInde) => (
+                    <div key={itemInde} className="text-2xl text-white">
                       {icon}
                     </div>
                   ))}
