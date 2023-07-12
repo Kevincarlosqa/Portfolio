@@ -57,7 +57,6 @@ const ServiceSlider = () => {
           spaceBetween: 15,
         },
       }}
-      freeMode={true}
       pagination={{
         clickable: true,
       }}
