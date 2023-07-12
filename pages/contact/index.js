@@ -1,6 +1,6 @@
 // components
 import Circles from "../../components/Circles";
-
+import ParticlesContact from "../../components/ParticlesContact";
 // icons
 import { BsArrowRight } from "react-icons/bs";
 
@@ -15,8 +15,9 @@ const Contact = () => {
     <div className="h-full bg-primary/30">
       <div
         className="container mx-auto py-32 text-center xl:text-left flex
-      items-center justify-center h-full"
+        items-center justify-center h-full"
       >
+        <ParticlesContact />
         {/* text & form */}
         <div className="flex flex-col w-full max-w-[700px]">
           {/* text */}
@@ -35,7 +36,7 @@ const Contact = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="flex-1 flex flex-col gap-6 w-full mx-auto"
+            className="flex-1 flex flex-col gap-6 w-full mx-auto z-50"
           >
             {/* input group */}
             <div className="flex gap-x-6 w-full">
