@@ -54,7 +54,7 @@ const ParticlesContact = () => {
             size: true,
             attract: { enable: false, rotateX: 600, rotateY: 600 },
             bounce: false,
-            direction: "none",
+            direction: "right",
             enable: true,
             out_mode: "out",
             random: true,
