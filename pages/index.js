@@ -16,7 +16,8 @@ const Home = () => {
   return (
     <div className=" min-h-screen  ">
       {/* text */}
-      <div className=" min-h-screen bg-gradient-to-r from-primary/10 via-black/30 to-black/10 ">
+      {/* bg-gradient-to-r from-primary/10 via-black/30 to-black/10 */}
+      <div className=" min-h-screen bg-gradient-to-b from-[#3e6294] via-[#303956] to-[#866f8d]">
         <div
           className="text-center flex flex-col justify-center xl:pt-40 xl:text-left
         h-full container mx-auto"

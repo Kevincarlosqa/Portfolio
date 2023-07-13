@@ -11,16 +11,29 @@ import { motion } from "framer-motion";
 
 // variants
 import { fadeIn } from "../../variants";
+import { useEffect, useState } from "react";
+import { useMediaQuery } from "react-responsive";
 
 const Contact = () => {
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+  const [render, setRender] = useState(false);
+
+  useEffect(() => {
+    setRender(isMobile);
+  }, [isMobile]);
+
   return (
-    <div className="min-h-screen ">
+    <div className="min-h-screen bg-gradient-to-b from-[#3e6294] via-[#303956] to-[#866f8d]">
       <div
         className="container mx-auto py-32 text-center xl:text-left flex flex-col xl:flex-row
         items-center justify-center h-full"
       >
         <ParticlesContact />
-
+        {render && (
+          <div className="h-[250px] w-[250px]">
+            <EarthCanvas />
+          </div>
+        )}
         {/* text & form */}
         <div className="flex flex-col w-full max-w-[700px]">
           {/* text */}
@@ -39,14 +52,14 @@ const Contact = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="flex-1 flex flex-col gap-6 w-full mx-auto z-10"
+            className="flex-1 flex flex-col gap-6 w-full xl:w-[80%] mx-auto z-10"
           >
             {/* input group */}
             <div className="flex gap-x-6 w-full">
               <input type="text" placeholder="name" className="input" />
-              <input type="email" placeholder="email" className="input" />
             </div>
-            <input type="text" placeholder="subject" className="input" />
+            <input type="email" placeholder="email" className="input" />
+            {/* <input type="text" placeholder="subject" className="input" /> */}
             <textarea placeholder="message" className="textarea"></textarea>
             <button
               type="submit"
@@ -68,9 +81,11 @@ const Contact = () => {
             </button>
           </motion.form>
         </div>
-        <div className="h-[500px] w-[500px]">
-          <EarthCanvas />
-        </div>
+        {!render && (
+          <div className="h-[500px] w-[500px]">
+            <EarthCanvas />
+          </div>
+        )}
       </div>
     </div>
   );
