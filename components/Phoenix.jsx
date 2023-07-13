@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { Model } from "./Scene";
-
+import CanvasLoader from "./canvas/Loader";
 const Phoenix = () => {
   return (
     <Canvas
@@ -20,7 +20,7 @@ const Phoenix = () => {
       <directionalLight intensity={0.5} />
       <ambientLight intensity={0.5} />
       <pointLight intensity={2} />
-      <Suspense fallback={null}>
+      <Suspense fallback={<CanvasLoader />}>
         <Model />
       </Suspense>
     </Canvas>
