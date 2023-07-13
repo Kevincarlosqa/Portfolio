@@ -11,6 +11,7 @@ import { motion } from "framer-motion";
 
 // variants
 import { fadeIn } from "../variants";
+import Phoenix from "../components/Phoenix";
 
 const Home = () => {
   return (
@@ -18,7 +19,7 @@ const Home = () => {
       {/* text */}
       {/* bg-gradient-to-r from-primary/10 via-black/30 to-black/10 */}
       {/* from-[#3e6294] via-[#303956] to-[#866f8d] */}
-      <div className=" min-h-screen bg-gradient-to-b  from-[#0B0205] via-[#2C1B47] to-[#724C9D]">
+      <div className=" min-h-screen bg-gradient-to-b  from-[#0B0205] to-[#0B0205]">
         <div
           className="text-center flex flex-col justify-center pt-40 xl:text-left
         h-full container mx-auto"
@@ -79,7 +80,7 @@ const Home = () => {
         <ParticlesContainer />
 
         {/* avatar img */}
-        <motion.div
+        {/* <motion.div
           variants={fadeIn("up", 0.5)}
           initial="hidden"
           animate="show"
@@ -88,7 +89,10 @@ const Home = () => {
           className="w-full max-w-[500px] max-h-[500px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]"
         >
           <Avatar />
-        </motion.div>
+        </motion.div> */}
+        <div className="h-[100%] w-[100%] absolute left-[300px] top-[100px] xl:-bottom-32 lg:bottom-0 lg:right-[8%]">
+          <Phoenix />
+        </div>
       </div>
     </div>
   );

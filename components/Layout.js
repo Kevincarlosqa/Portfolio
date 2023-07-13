@@ -1,6 +1,6 @@
 // fonts
 import { Sora } from "@next/font/google";
-import { useEffect } from "react";
+import { Suspense, useEffect } from "react";
 
 // font settings
 const sora = Sora({
@@ -22,6 +22,7 @@ const Layout = ({ children }) => {
       <TopLeftImg />
       <Nav />
       <Header />
+
       {children}
     </div>
   );
