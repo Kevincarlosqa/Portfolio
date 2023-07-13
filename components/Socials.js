@@ -21,7 +21,7 @@ const socialMedia = [
 ];
 const Socials = () => {
   return (
-    <div className="flex items-center gap-x-5 text-[23px]">
+    <div className="flex items-center gap-x-5 text-[20px] xl:text-[25px]">
       {socialMedia.map((social, index) => (
         <Link
           key={index}

@@ -18,12 +18,41 @@
   color: #f13024;
 }
 
+.content-container {
+  /* transform: scale(0.8);
+  /* /* transform-origin: top; */
+  /* transform-origin: 50% 50%;
+  height: 100%; */
+  /* zoom: 0.8; */
+  /* 
+  height: screen;
+  overflow: hidden; */
+}
+
+/* body {
+  zoom: 0.8; /* Restablecer el zoom a 1 para evitar efectos no deseados */
+
+.zoom-effect {
+  zoom: 80%; /* Establecer el zoom deseado (en este caso, 80%) */
+  transform-origin: center; /* Asegurarse de que el origen de la transformación sea el centro */
+  width: 100vw; /* El ancho se ajusta al 100% del ancho de la ventana */
+  height: 100vh; /* La altura se ajusta al 100% de la altura de la ventana */
+}
+/* body {
+  zoom: 0.8 !important;
+} */
+/* html,
+body {
+  transform: scale(0.8);
+  transform-origin: top;
+} */
+
 @layer base {
   body {
-    @apply bg-secondary overflow-hidden leading-relaxed;
+    @apply bg-secondary  scrollbar-none leading-relaxed min-h-screen;
   }
   .page {
-    @apply w-full h-screen overflow-hidden;
+    @apply w-full min-h-screen overflow-hidden;
   }
   .h1 {
     @apply text-[35px] leading-tight md:text-[60px] md:leading-[1.3] mb-8 font-semibold;

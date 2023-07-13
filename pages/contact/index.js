@@ -1,6 +1,8 @@
 // components
 import Circles from "../../components/Circles";
 import ParticlesContact from "../../components/ParticlesContact";
+import EarthCanvas from "../../components/canvas/Earth";
+
 // icons
 import { BsArrowRight } from "react-icons/bs";
 
@@ -12,12 +14,13 @@ import { fadeIn } from "../../variants";
 
 const Contact = () => {
   return (
-    <div className="h-full bg-primary/30">
+    <div className="min-h-screen ">
       <div
-        className="container mx-auto py-32 text-center xl:text-left flex
+        className="container mx-auto py-32 text-center xl:text-left flex flex-col xl:flex-row
         items-center justify-center h-full"
       >
         <ParticlesContact />
+
         {/* text & form */}
         <div className="flex flex-col w-full max-w-[700px]">
           {/* text */}
@@ -36,7 +39,7 @@ const Contact = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="flex-1 flex flex-col gap-6 w-full mx-auto z-50"
+            className="flex-1 flex flex-col gap-6 w-full mx-auto z-10"
           >
             {/* input group */}
             <div className="flex gap-x-6 w-full">
@@ -64,6 +67,9 @@ const Contact = () => {
               />
             </button>
           </motion.form>
+        </div>
+        <div className="h-[500px] w-[500px]">
+          <EarthCanvas />
         </div>
       </div>
     </div>

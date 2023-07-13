@@ -42,7 +42,7 @@ const ParticlesContact = () => {
           },
         },
         particles: {
-          color: { value: "#f272c8" },
+          color: { value: "#d7dde1" },
           line_linked: {
             color: "#ffffff",
             distance: 150,
