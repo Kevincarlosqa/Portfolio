@@ -14,13 +14,13 @@ import { fadeIn } from "../variants";
 
 const Home = () => {
   return (
-    <div className=" min-h-screen  ">
+    <div className=" min-h-screen">
       {/* text */}
       {/* bg-gradient-to-r from-primary/10 via-black/30 to-black/10 */}
       {/* from-[#3e6294] via-[#303956] to-[#866f8d] */}
-      <div className=" min-h-screen bg-gradient-to-b  from-[#021f4b] via-[#4c3b71] to-[#866f8d]">
+      <div className=" min-h-screen bg-gradient-to-b  from-[#0B0205] via-[#2C1B47] to-[#724C9D]">
         <div
-          className="text-center flex flex-col justify-center xl:pt-40 xl:text-left
+          className="text-center flex flex-col justify-center pt-40 xl:text-left
         h-full container mx-auto"
         >
           {/* title */}
@@ -47,9 +47,15 @@ const Home = () => {
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           </motion.p>
           {/* btn */}
-          <div className="flex justify-center xl:hidden relative">
-            <ProjectsBtn />
-          </div>
+          <motion.div
+            variants={fadeIn("down", 0.4)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="flex justify-center xl:hidden  "
+          >
+            <ProjectsBtn className="" />
+          </motion.div>
           <motion.div
             variants={fadeIn("down", 0.4)}
             initial="hidden"
@@ -79,7 +85,7 @@ const Home = () => {
           animate="show"
           exit="hidden"
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]"
+          className="w-full max-w-[500px] max-h-[500px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]"
         >
           <Avatar />
         </motion.div>
