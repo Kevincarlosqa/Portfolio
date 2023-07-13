@@ -32,8 +32,9 @@ const Home = () => {
             exit="hidden"
             className="h1"
           >
-            Transforming Ideas <br /> Into{" "}
-            <span className="text-accent">Digital Rality</span>
+            Connecting code and creativity,
+            <br /> The power of a{" "}
+            <span className="text-accent">Full Stack Web Developer</span>
           </motion.h1>
           {/* subtitle */}
           <motion.p
@@ -43,9 +44,10 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            Passionate about technology and its transformative capacity in all
+            aspects of life. My passion led me to pursue a degree in
+            Mechatronics Engineering, where I had the opportunity to explore
+            programming.
           </motion.p>
           {/* btn */}
           <motion.div

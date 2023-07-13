@@ -22,7 +22,13 @@ export function Model(props) {
     actions["Take 001"].play();
   }, [actions]);
   return (
-    <group ref={group} {...props} dispose={null} position={[0, 0, 0]}>
+    <group
+      ref={group}
+      {...props}
+      dispose={null}
+      position={[10, -3, 0]}
+      rotation={[0, 0, 0]}
+    >
       <group name="Sketchfab_Scene">
         <group
           name="Sketchfab_model"
@@ -36,11 +42,11 @@ export function Model(props) {
             <group name="Object_2">
               <group name="RootNode">
                 <group name="Object_4">
-                  <primitive object={nodes._rootJoint} scale={0.02} />
+                  <primitive object={nodes._rootJoint} scale={0.035} />
                   <group name="Object_6" rotation={[-Math.PI / 2, 0, 0]} />
                   <group
                     name="AMesh_Ride_FengHuang_01"
-                    rotation={[-Math.PI / 2, 0, 0]}
+                    // rotation={[-Math.PI / 2, 0, 0]}
                   />
                   <skinnedMesh
                     name="Object_7"
