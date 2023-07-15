@@ -23,7 +23,7 @@ const Contact = () => {
   }, [isMobile]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#0B0205] via-[#2C1B47] to-[#724C9D]">
+    <div className="min-h-screen bg-gradient-to-b  from-[#0E0613]  to-[#142f48]">
       <div
         className="container mx-auto py-32 text-center xl:text-left flex flex-col xl:flex-row
         items-center justify-center h-full"

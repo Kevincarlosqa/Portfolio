@@ -106,7 +106,7 @@ import CountUp from "react-countup";
 const About = () => {
   const [index, setIndex] = useState(0);
   return (
-    <div className=" pt-40 text-center min-h-screen xl:text-left bg-gradient-to-b from-[#3e6294] via-[#303956] to-[#866f8d]">
+    <div className=" pt-40 text-center min-h-screen xl:text-left bg-gradient-to-b  from-[#0B0205] to-[#142f48]">
       <Circles />
       {/* avatar img */}
       <motion.div

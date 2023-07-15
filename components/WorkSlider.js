@@ -1,5 +1,6 @@
 // import swiper react components
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useMediaQuery } from "react-responsive";
 
 // import swiper styles
 import "swiper/css";
@@ -40,6 +41,23 @@ const workSlides = {
     {
       images: [
         {
+          title: "Title",
+          path: "/thumb4.jpg",
+          description:
+            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+          stack: [
+            <FaCss3 key="css" />,
+            <FaHtml5 key="hmtl" />,
+            <FaReact key="react" />,
+            <SiNextdotjs key="next" />,
+            <SiFramer key="frame" />,
+          ],
+        },
+      ],
+    },
+    {
+      images: [
+        {
           title: "Imperium Gym",
           path: "/imperiumgym.png",
           description:
@@ -71,23 +89,7 @@ const workSlides = {
         },
       ],
     },
-    {
-      images: [
-        {
-          title: "Title",
-          path: "/thumb4.jpg",
-          description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-          stack: [
-            <FaCss3 key="css" />,
-            <FaHtml5 key="hmtl" />,
-            <FaReact key="react" />,
-            <SiNextdotjs key="next" />,
-            <SiFramer key="frame" />,
-          ],
-        },
-      ],
-    },
+
     {
       images: [
         {
@@ -143,12 +145,13 @@ const workSlides = {
 };
 
 const WorkSlider = () => {
+  const isMobile = useMediaQuery({ maxWidth: 767 });
   return (
     <Swiper
       effect={"coverflow"}
       grabCursor={true}
       centeredSlides={true}
-      slidesPerView={3}
+      slidesPerView={isMobile ? 1 : 3}
       coverflowEffect={{
         rotate: 50,
         stretch: 0,
@@ -164,7 +167,11 @@ const WorkSlider = () => {
       loop={true}
       modules={[EffectCoverflow, Pagination]}
       // className="mySwiper"
-      className="h-[280px] w-[800px] sm:h-[480px]"
+      className={
+        isMobile
+          ? " sm:h-[480px] w-[310px]"
+          : "h-[280px] w-[800px] sm:h-[480px] "
+      }
     >
       {workSlides.slides.map((slide, index) => {
         return (
@@ -209,7 +216,7 @@ const WorkSlider = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="text-accent text-2xl py-2 mt-2">
+                  <div className="text-accent text-2xl font-bold py-2 mt-2">
                     <h1>{image.title}</h1>
                   </div>
                   <div>
