@@ -16,7 +16,9 @@ import {
 import {
   SiAdobephotoshop,
   SiAdobexd,
-  SiFramer,
+  // SiFramer,
+  SiRuby,
+  SiRubyonrails,
   SiNextdotjs,
 } from "react-icons/si";
 
@@ -33,8 +35,8 @@ const aboutData = [
           <FaJs key="js" />,
           <FaReact key="react" />,
           <SiNextdotjs key="nextjs" />,
-          <SiFramer key="framer" />,
-          <FaWordpress key="wordpress" />,
+          <SiRuby key="framer" />,
+          <SiRubyonrails key="wordpress" />,
         ],
       },
       {
@@ -48,7 +50,7 @@ const aboutData = [
     ],
   },
   {
-    title: "awards",
+    title: "Education",
     info: [
       {
         title: "Webby Awards - Honoree",
@@ -78,7 +80,7 @@ const aboutData = [
     ],
   },
   {
-    title: "credentials",
+    title: "Hobbies",
     info: [
       {
         title: "Web Development - ABC University, LA, CA",

@@ -7,7 +7,7 @@ const Phoenix = () => {
   return (
     <Canvas
       // className="mt-20 ml-5"
-      className="overflow-visible z-[999]"
+      className="overflow-visible"
       shadows
       // frameloop="frame"
       camera={{ fov: 45, near: 0.2, far: 200, position: [-60, 0, 0] }}
