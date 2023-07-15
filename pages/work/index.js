@@ -9,7 +9,7 @@ import { fadeIn } from "../../variants";
 
 const Work = () => {
   return (
-    <div className="h-full bg-gradient-to-b  from-[#0B0205] to-[#142f48] py-36 flex items-center">
+    <div className="min-h-screen bg-gradient-to-b  from-[#0B0205] to-[#142f48] py-36 flex items-center">
       <Circles />
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
