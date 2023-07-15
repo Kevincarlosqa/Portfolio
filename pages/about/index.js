@@ -106,7 +106,7 @@ import CountUp from "react-countup";
 const About = () => {
   const [index, setIndex] = useState(0);
   return (
-    <div className=" py-32 text-center xl:text-left bg-gradient-to-b from-[#3e6294] via-[#303956] to-[#866f8d]">
+    <div className=" pt-40 text-center min-h-screen xl:text-left bg-gradient-to-b from-[#3e6294] via-[#303956] to-[#866f8d]">
       <Circles />
       {/* avatar img */}
       <motion.div
@@ -209,7 +209,7 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
+          className="flex flex-col w-full xl:max-w-[48%] xl:h-[480px] h-[420px]"
         >
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, itemIndex) => (
