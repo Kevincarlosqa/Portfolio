@@ -12,8 +12,17 @@ import { motion } from "framer-motion";
 // variants
 import { fadeIn } from "../variants";
 import Phoenix from "../components/Phoenix";
+import { useMediaQuery } from "react-responsive";
+import { useEffect, useState } from "react";
 
 const Home = () => {
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+  const [render, setRender] = useState(false);
+
+  useEffect(() => {
+    setRender(isMobile);
+    console.log("render");
+  }, [isMobile]);
   return (
     <div className=" min-h-screen">
       {/* text */}
@@ -22,16 +31,21 @@ const Home = () => {
       {/* #142f48 */}
       <div className=" min-h-screen bg-gradient-to-b  from-[#0B0205] to-[#142f48]">
         <div
-          className="text-center flex flex-col justify-center pt-40 xl:text-left
+          className="text-center flex flex-col justify-center xl:pt-40 pt-[130px] xl:text-left
         h-full container mx-auto"
         >
+          {render && (
+            <div className="h-[100%] w-[100%] overflow-visible z-[999]">
+              <Phoenix />
+            </div>
+          )}
           {/* title */}
           <motion.h1
             variants={fadeIn("down", 0.2)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h1"
+            className={isMobile ? "h2" : "h1"}
           >
             Connecting code and creativity,
             <br /> The power of a{" "}
@@ -94,9 +108,11 @@ const Home = () => {
         >
           <Avatar />
         </motion.div> */}
-        <div className="h-[100%] w-[100%] absolute left-[300px] top-[100px] xl:-bottom-32 lg:bottom-0 lg:right-[8%]">
-          <Phoenix />
-        </div>
+        {!render && (
+          <div className="h-[100%] w-[100%] absolute left-[300px] top-[100px] xl:-bottom-32 lg:bottom-0 lg:right-[8%]">
+            <Phoenix />
+          </div>
+        )}
       </div>
     </div>
   );

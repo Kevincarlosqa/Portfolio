@@ -42,7 +42,7 @@ export function Model(props) {
             <group name="Object_2">
               <group name="RootNode">
                 <group name="Object_4">
-                  <primitive object={nodes._rootJoint} scale={0.035} />
+                  <primitive object={nodes._rootJoint} scale={0.05} />
                   <group name="Object_6" rotation={[-Math.PI / 2, 0, 0]} />
                   <group
                     name="AMesh_Ride_FengHuang_01"

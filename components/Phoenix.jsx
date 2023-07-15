@@ -7,9 +7,10 @@ const Phoenix = () => {
   return (
     <Canvas
       // className="mt-20 ml-5"
+      className="overflow-visible z-[999]"
       shadows
       // frameloop="frame"
-      camera={{ fov: 45, near: 0.1, far: 200, position: [-50, 0, 0] }}
+      camera={{ fov: 45, near: 0.2, far: 200, position: [-60, 0, 0] }}
     >
       <OrbitControls
         // autoRotate
@@ -20,7 +21,7 @@ const Phoenix = () => {
       <directionalLight intensity={0.5} />
       <ambientLight intensity={0.5} />
       <pointLight intensity={2} />
-      <Suspense fallback={<CanvasLoader />}>
+      <Suspense fallback={<CanvasLoader />} className="">
         <Model />
       </Suspense>
     </Canvas>
