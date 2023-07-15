@@ -20,6 +20,7 @@ const Contact = () => {
 
   useEffect(() => {
     setRender(isMobile);
+    console.log("render");
   }, [isMobile]);
 
   return (

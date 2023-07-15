@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import Image from "next/image";
 // framer motion
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
@@ -109,7 +109,7 @@ const About = () => {
     <div className=" pt-40 text-center min-h-screen xl:text-left bg-gradient-to-b  from-[#0B0205] to-[#142f48]">
       <Circles />
       {/* avatar img */}
-      <motion.div
+      {/* <motion.div
         variants={fadeIn("right", 0.2)}
         initial="hidden"
         animate="show"
@@ -117,7 +117,7 @@ const About = () => {
         className="hidden xl:flex absolute bottom-0 -left-[370px]"
       >
         <Avatar />
-      </motion.div>
+      </motion.div> */}
       <div
         className="container mx-auto h-full flex flex-col items-center
         xl:flex-row gap-x-6"
@@ -131,8 +131,8 @@ const About = () => {
             exit="hidden"
             className="h2"
           >
-            Captivating <span className="text-accent">stories </span>
-            birth magnificent designs.
+            Merging <span className="text-accent">passion and code </span>
+            for cutting-edge web development.
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.4)}
@@ -141,10 +141,10 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            10 years ago, Ibegan freelancing as a developer. Since then,{" "}
-            {"I've"}
-            done remote work for aegncies, consulted for startups, and
-            collaborated on digital products for business and consumer use.
+            I am passionate about technology and its ability to transform our
+            lives. With a background in Mechatronics Engineering and experience
+            in Full-Stack web development, I have acquired a diverse set of
+            skills to build complete applications and solutions.
           </motion.p>
           {/* counters */}
           <motion.div
@@ -252,7 +252,17 @@ const About = () => {
               </div>
             ))}
           </div>
+          {/* <div className="pb-[100px] bottom-0">
+            <Image
+              src="/full_stack.png"
+              width={400}
+              height={400}
+              alt=""
+              className="mirror-image"
+            />
+          </div> */}
         </motion.div>
+        <div></div>
       </div>
     </div>
   );

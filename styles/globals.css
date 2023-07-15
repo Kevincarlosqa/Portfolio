@@ -29,6 +29,9 @@
   overflow: hidden; */
 }
 
+.mirror-image {
+  transform: scaleX(-1);
+}
 /* body {
   zoom: 0.8; /* Restablecer el zoom a 1 para evitar efectos no deseados */
 

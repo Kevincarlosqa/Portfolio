@@ -161,7 +161,7 @@ const WorkSlider = () => {
       }}
       initialSlide={1}
       spaceBetween={15}
-      loopAdditionalSlides={1}
+      // loopAdditionalSlides={1}
       slidesPerGroup={1}
       pagination={true}
       loop={true}
