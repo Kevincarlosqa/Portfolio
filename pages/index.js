@@ -45,10 +45,11 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            I'm <span className="text-accent"> Kevin Quispe</span>, Passionate
-            about technology and its transformative capacity in all aspects of
-            life. My passion led me to pursue a degree in Mechatronics
-            Engineering, where I had the opportunity to explore programming.
+            {"I'm"} <span className="text-accent"> Kevin Quispe</span>,
+            Passionate about technology and its transformative capacity in all
+            aspects of life. My passion led me to pursue a degree in
+            Mechatronics Engineering, where I had the opportunity to explore
+            programming.
           </motion.p>
           {/* btn */}
           <motion.div
