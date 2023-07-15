@@ -168,9 +168,7 @@ const WorkSlider = () => {
       modules={[EffectCoverflow, Pagination]}
       // className="mySwiper"
       className={
-        isMobile
-          ? " sm:h-[480px] w-[310px]"
-          : "h-[280px] w-[800px] sm:h-[480px] "
+        isMobile ? " h-[470px] w-[310px]" : "h-[280px] w-[800px] sm:h-[480px] "
       }
     >
       {workSlides.slides.map((slide, index) => {
