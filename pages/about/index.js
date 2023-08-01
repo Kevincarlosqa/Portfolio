@@ -20,6 +20,8 @@ import {
   SiRuby,
   SiRubyonrails,
   SiNextdotjs,
+  SiThreedotjs,
+  SiPostgresql,
 } from "react-icons/si";
 
 //  data
@@ -28,23 +30,25 @@ const aboutData = [
     title: "skills",
     info: [
       {
-        title: "Web Development",
+        title: "Frontend Skills",
         icons: [
           <FaHtml5 key="html5" />,
           <FaCss3 key="css3" />,
           <FaJs key="js" />,
           <FaReact key="react" />,
           <SiNextdotjs key="nextjs" />,
-          <SiRuby key="framer" />,
-          <SiRubyonrails key="wordpress" />,
+          <SiThreedotjs key="three" />,
         ],
       },
       {
-        title: "UI/UX Design",
+        title: "Backend Skills",
         icons: [
-          <FaFigma key="figma" />,
-          <SiAdobexd key="adobexd" />,
-          <SiAdobephotoshop key="photoshop" />,
+          // <FaFigma key="figma" />,
+          // <SiAdobexd key="adobexd" />,
+          // <SiAdobephotoshop key="photoshop" />,
+          <SiRuby key="framer" />,
+          <SiRubyonrails width={200} height={100} key="wordpress" />,
+          <SiPostgresql key="postgres" />,
         ],
       },
     ],
@@ -53,12 +57,20 @@ const aboutData = [
     title: "Education",
     info: [
       {
-        title: "Web development",
-        stage: "2011 - 2012",
+        title: "Codeable",
+        description:
+          "Intensive full-stack web development educational program (full time, 6 months)",
+        stage: "Lima, Peru - 2023",
       },
       {
-        title: "Web development",
-        stage: "2009 - 2010",
+        title: "Universidad Catolica de Santa Maria (UCSM)",
+        description: "Bachelor in Mechatronics Engineering",
+        stage: "2013 - 2021",
+      },
+      {
+        title: "CEPROTEC",
+        description: "Computer assembly, maintenance and repair",
+        stage: "2011",
       },
     ],
   },
@@ -66,33 +78,35 @@ const aboutData = [
     title: "experience",
     info: [
       {
-        title: "Web Developer - ABC Agency",
-        stage: "2023 - 2023",
+        title: "Smugglers’ Notch Resort",
+        stage: "2018",
       },
       {
-        title: "Web Developer - ABC Agency",
-        stage: "2023 - 2023",
+        title: "Sergear S.A.C.",
+        stage: " 2014 – 2015",
       },
-      {
-        title: "Web Developer - ABC Agency",
-        stage: "2023 - 2023",
-      },
+      // {
+      //   title: "Web Developer - ABC Agency",
+      //   stage: "2023 - 2023",
+      // },
     ],
   },
   {
     title: "Hobbies",
     info: [
       {
-        title: "Web Developer",
-        stage: "2023",
+        title: "Programming",
+        stage:
+          "I like to turn my creativity into code and solve problems that arise",
       },
       {
-        title: "Web Developer",
-        stage: "2023",
+        title: "Meditation",
+        stage: "I like to meditate to control my emotions and myself",
       },
       {
-        title: "Web Developer",
-        stage: "2023",
+        title: "Music",
+        stage:
+          "I like to play music, I learned on my own to play various instruments such as guitar, piano and ukulele",
       },
     ],
   },
@@ -191,7 +205,7 @@ const About = () => {
                 <div className="flex gap-x-4">
                   {/* icons */}
                   {item.icons?.map((icon, itemInde) => (
-                    <div key={itemInde} className="text-2xl text-white">
+                    <div key={itemInde} className="text-3xl text-white">
                       {icon}
                     </div>
                   ))}

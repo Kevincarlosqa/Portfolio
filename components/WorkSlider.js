@@ -23,6 +23,9 @@ import {
   SiAdobexd,
   SiFramer,
   SiNextdotjs,
+  SiTailwindcss,
+  SiStyledcomponents,
+  SiThreedotjs,
 } from "react-icons/si";
 
 // import required modules
@@ -66,9 +69,11 @@ const workSlides = {
             <FaCss3 key="css" />,
             <FaHtml5 key="hmtl" />,
             <FaReact key="react" />,
-            <SiNextdotjs key="next" />,
+            // <SiNextdotjs key="next" />,
             <SiFramer key="frame" />,
           ],
+          repo: "https://github.com/Kevincarlosqa/gym-project",
+          link: "https://imperiumgym.netlify.app/",
         },
       ],
     },
@@ -79,13 +84,27 @@ const workSlides = {
           path: "/html.png",
           description:
             "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+          stack: [<FaCss3 key="css" />, <FaHtml5 key="hmtl" />],
+          repo: "https://github.com/Kevincarlosqa/Blog-UI",
+          link: "https://kevincarlosqa-blog.netlify.app/portfolio.html",
+        },
+      ],
+    },
+    {
+      images: [
+        {
+          title: "Get That Job",
+          path: "/gethatjob.png",
+          description:
+            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
           stack: [
             <FaCss3 key="css" />,
             <FaHtml5 key="hmtl" />,
             <FaReact key="react" />,
-            <SiNextdotjs key="next" />,
-            <SiFramer key="frame" />,
+            // <SiStyledcomponents key="emotion" />,
           ],
+          repo: "https://github.com/Kevincarlosqa/GetThatJob",
+          link: "https://kevincarlosqa-blog.netlify.app/portfolio.html",
         },
       ],
     },
@@ -93,8 +112,8 @@ const workSlides = {
     {
       images: [
         {
-          title: "Title",
-          path: "/thumb4.jpg",
+          title: "Get That Job - API",
+          path: "/getthatjob-api.png",
           description:
             "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
           stack: [
@@ -104,23 +123,27 @@ const workSlides = {
             <SiNextdotjs key="next" />,
             <SiFramer key="frame" />,
           ],
+          repo: "https://github.com/Kevincarlosqa/GetThatJob-API",
         },
       ],
     },
     {
       images: [
         {
-          title: "Title",
-          path: "/thumb4.jpg",
+          title: "Portfolio",
+          path: "/portfolio.png",
           description:
             "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
           stack: [
-            <FaCss3 key="css" />,
-            <FaHtml5 key="hmtl" />,
+            // <FaCss3 key="css" />,
+            // <FaHtml5 key="hmtl" />,
             <FaReact key="react" />,
             <SiNextdotjs key="next" />,
             <SiFramer key="frame" />,
+            <SiTailwindcss key="tailwind" />,
+            <SiThreedotjs key="three" />,
           ],
+          repo: "",
         },
       ],
     },
@@ -228,7 +251,7 @@ const WorkSlider = () => {
                     ))}
                   </div>
                   <Link
-                    href="https://github.com/Kevincarlosqa/gym-project"
+                    href={image.repo ? image.repo : ""}
                     target="_blank"
                     className="text-4xl pt-4 pb-3"
                   >

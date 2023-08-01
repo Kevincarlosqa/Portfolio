@@ -1,5 +1,7 @@
 // next image
 import Image from "next/image";
+// import Lottie from "lottie-react";
+// import base from "../public/laptop.json";
 
 // components
 import ParticlesContainer from "../components/ParticlesContainer";
@@ -73,7 +75,7 @@ const Home = () => {
             exit="hidden"
             className="flex justify-center xl:hidden  "
           >
-            <ProjectsBtn className="" />
+            {/* <ProjectsBtn className="" /> */}
           </motion.div>
           <motion.div
             variants={fadeIn("down", 0.4)}
@@ -83,6 +85,9 @@ const Home = () => {
             className="hidden xl:flex"
           >
             <ProjectsBtn />
+            {/* <div style={{ width: "250px", height: "250px" }}>
+              <Lottie animationData={base} />
+            </div> */}
           </motion.div>
         </div>
       </div>
@@ -96,18 +101,6 @@ const Home = () => {
         {/* particles */}
 
         <ParticlesContainer />
-
-        {/* avatar img */}
-        {/* <motion.div
-          variants={fadeIn("up", 0.5)}
-          initial="hidden"
-          animate="show"
-          exit="hidden"
-          transition={{ duration: 1, ease: "easeInOut" }}
-          className="w-full max-w-[500px] max-h-[500px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]"
-        >
-          <Avatar />
-        </motion.div> */}
         {!render && (
           <div className="h-[100%] w-[100%] absolute left-[300px] top-[100px] xl:-bottom-32 lg:bottom-0 lg:right-[8%]">
             <Phoenix />
