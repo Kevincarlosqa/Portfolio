@@ -53,7 +53,7 @@ const Contact = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="flex-1 flex flex-col gap-6 w-full xl:w-[80%] mx-auto z-10"
+            className="flex-1 flex flex-col gap-6 w-full xl:w-[80%] mx-auto items-center z-10"
           >
             {/* input group */}
             <div className="flex gap-x-6 w-full">
@@ -66,7 +66,7 @@ const Contact = () => {
               type="submit"
               className="btn rounded-full border border-white/50 max-w-[170px]
               px-8 transiton-all duration-300 flex items-center justify-center
-              overflow-hidden hover:border-accent group"
+              overflow-hidden hover:border-accent group "
             >
               <span
                 className="group-hover:-translate-y-[120%] group-hover:opacity-0

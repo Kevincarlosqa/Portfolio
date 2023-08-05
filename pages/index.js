@@ -31,13 +31,13 @@ const Home = () => {
       {/* bg-gradient-to-r from-primary/10 via-black/30 to-black/10 */}
       {/* from-[#3e6294] via-[#303956] to-[#866f8d] */}
       {/* #142f48 */}
-      <div className=" min-h-screen bg-gradient-to-b  from-[#0B0205] to-[#142f48]">
+      <div className="min-h-screen bg-gradient-to-b  from-[#0B0205] to-[#142f48]">
         <div
           className="text-center flex flex-col justify-center xl:pt-40 pt-[130px] xl:text-left
         h-full container mx-auto"
         >
           {render && (
-            <div className="h-[100%] w-[100%] overflow-visible z-[999]">
+            <div className="h-[100%] w-[100%] overflow-visible z-[8]">
               <Phoenix />
             </div>
           )}
@@ -83,7 +83,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="ml-[200px] mt-10 xl:flex"
+            className="lg:ml-[200px] mb-[90px] z-10 lg:mt-10 mt-0 xl:flex"
           >
             <ProjectsBtn />
             {/* <div style={{ width: "250px", height: "250px" }}>
@@ -103,7 +103,7 @@ const Home = () => {
 
         <ParticlesContainer />
         {!render && (
-          <div className="h-[100%] w-[100%] absolute left-[420px] top-[100px] xl:-bottom-32 lg:bottom-0 lg:right-[8%]">
+          <div className="h-[100%] w-[100%] absolute left-[420px] top-[100px] xl:-bottom-32 lg:bottom-0 lg:right-[8%] z-[8]">
             <Phoenix />
           </div>
         )}

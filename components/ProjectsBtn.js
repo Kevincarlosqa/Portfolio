@@ -12,11 +12,11 @@ import { HiArrowRight } from "react-icons/hi2";
 
 const ProjectsBtn = () => {
   return (
-    <div className="mx-auto xl:mx-0 z-50 border rounded-2xl hover:bg-black/30 ">
+    <div className="mx-auto lg:w-auto w-[270px] xl:mx-0 lg:z-50 z-[100] border rounded-2xl hover:bg-black/30 ">
       <Link
         href="/work"
-        className="relative w-[100px] h-[100px] xl:w-[250px] xl:h-[50px] px-3 flex justify-center
-         items-center  bg-cover bg-center bg-no-repeat group"
+        className="relative  h-[50px] xl:w-[250px] xl:h-[50px] px-3 flex 
+         items-center justify-center "
       >
         {/* <Image
           src="/rounded-text.png"
@@ -29,7 +29,9 @@ const ProjectsBtn = () => {
         <h1 className="text-xl w-auto whitespace-nowrap text-accent font-bold pr-2">
           See my projects
         </h1>
-        <Lottie animationData={base} />
+        <div className="w-[60px] h-[60px] lg:w-auto lg:h-auto">
+          <Lottie animationData={base} />
+        </div>
       </Link>
     </div>
   );

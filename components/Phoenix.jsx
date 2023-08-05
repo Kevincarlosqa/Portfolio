@@ -6,8 +6,8 @@ import CanvasLoader from "./canvas/Loader";
 const Phoenix = () => {
   return (
     <Canvas
-      // className="mt-20 ml-5"
-      className="overflow-visible"
+      // className="mt"
+      className="overflow-visible z-10"
       shadows
       // frameloop="frame"
       camera={{

@@ -8,7 +8,7 @@ import { fadeIn } from "../../variants";
 
 const Services = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b  from-[#0B0205] to-[#142f48] py-36 flex items-center">
+    <div className="h-[100vh] lg:min-h-screen bg-gradient-to-b  from-[#0B0205] to-[#142f48] py-36 flex items-center">
       <Circles />
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
@@ -30,8 +30,9 @@ const Services = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              As a Full Stack web developer I am able to handle all layers of
-              web development, both client-side and server-side.{" "}
+              As a <span className="text-accent">Full Stack web developer</span>{" "}
+              I am able to handle all layers of web development, both
+              client-side and server-side.{" "}
             </motion.p>
           </div>
           <motion.div
