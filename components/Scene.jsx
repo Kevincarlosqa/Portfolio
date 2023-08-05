@@ -46,7 +46,7 @@ export function Model(props) {
                   <group name="Object_6" rotation={[-Math.PI / 2, 0, 0]} />
                   <group
                     name="AMesh_Ride_FengHuang_01"
-                    // rotation={[-Math.PI / 2, 0, 0]}
+                    rotation={[-Math.PI / 2, 0, 0]}
                   />
                   <skinnedMesh
                     name="Object_7"

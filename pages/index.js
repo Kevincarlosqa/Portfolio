@@ -67,6 +67,7 @@ const Home = () => {
             Mechatronics Engineering, where I had the opportunity to explore
             programming.
           </motion.p>
+
           {/* btn */}
           <motion.div
             variants={fadeIn("down", 0.4)}
@@ -82,7 +83,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="hidden xl:flex"
+            className="ml-[200px] mt-10 xl:flex"
           >
             <ProjectsBtn />
             {/* <div style={{ width: "250px", height: "250px" }}>
@@ -92,17 +93,17 @@ const Home = () => {
         </div>
       </div>
       {/* image */}
-      <div className="w-[1200px] h-full absolute right-0 bottom-0">
+      <div className="w-full h-full absolute right-0 bottom-0">
         {/* bg image */}
         <div
           className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right 
-        xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"
+        xl:bg-no-repeat w-[1200px]  ml-[100px] h-full absolute right-0 mix-blend-color-dodge translate-z-0"
         ></div>
         {/* particles */}
 
         <ParticlesContainer />
         {!render && (
-          <div className="h-[100%] w-[100%] absolute left-[300px] top-[100px] xl:-bottom-32 lg:bottom-0 lg:right-[8%]">
+          <div className="h-[100%] w-[100%] absolute left-[420px] top-[100px] xl:-bottom-32 lg:bottom-0 lg:right-[8%]">
             <Phoenix />
           </div>
         )}

@@ -135,7 +135,7 @@ const About = () => {
         <Avatar />
       </motion.div> */}
       <div
-        className="container mx-auto h-full flex flex-col items-center
+        className="container mx-auto  min-h-screen flex flex-col items-center
         xl:flex-row gap-x-6"
       >
         {/* text */}
@@ -162,6 +162,15 @@ const About = () => {
             in Full-Stack web development, I have acquired a diverse set of
             skills to build complete applications and solutions.
           </motion.p>
+          <div className="w-[200px] mx-auto shadow-xl border rounded-xl">
+            <Image
+              src="/profile.png"
+              width={200}
+              height={200}
+              alt=""
+              className="rounded-xl"
+            />
+          </div>
           {/* counters */}
         </div>
         {/* info */}
@@ -170,7 +179,7 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex flex-col w-full xl:max-w-[48%] xl:h-[480px] h-[420px]"
+          className="flex flex-col w-full xl:max-w-[48%] xl:h-[480px] min-h-screen"
         >
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, itemIndex) => (
@@ -213,13 +222,13 @@ const About = () => {
               </div>
             ))}
           </div>
-          {/* <div className="pb-[100px] bottom-0">
+          {/* <div className="w-[300px] mx-auto shadow-xl border rounded-xl mb-[90px]">
             <Image
-              src="/full_stack.png"
-              width={400}
-              height={400}
+              src="/profile.png"
+              width={300}
+              height={300}
               alt=""
-              className="mirror-image"
+              className="rounded-xl"
             />
           </div> */}
         </motion.div>

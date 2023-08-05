@@ -30,8 +30,8 @@ const Services = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+              As a Full Stack web developer I am able to handle all layers of
+              web development, both client-side and server-side.{" "}
             </motion.p>
           </div>
           <motion.div

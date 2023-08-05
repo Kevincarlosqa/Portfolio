@@ -10,7 +10,13 @@ const Phoenix = () => {
       className="overflow-visible"
       shadows
       // frameloop="frame"
-      camera={{ fov: 45, near: 0.2, far: 200, position: [-60, 0, 0] }}
+      camera={{
+        fov: 45,
+        near: 0.2,
+        far: 200,
+        position: [-60, 0, 0],
+        rotation: [0, Math.PI / 2, 0],
+      }}
     >
       <OrbitControls
         // autoRotate

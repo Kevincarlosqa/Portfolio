@@ -23,28 +23,32 @@ import { FreeMode, Pagination } from "swiper";
 const serviceData = [
   {
     icon: <RxCrop />,
-    title: "Branding",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "Front-end",
+    description:
+      "Design and development of attractive and responsive user interfaces.",
   },
   {
     icon: <RxPencil2 />,
-    title: "Design",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "Back-end",
+    description:
+      "Implementation of APIs and web services with Ruby on Rails and Postgresql",
   },
   {
     icon: <RxDesktop />,
-    title: "Development",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "Databases",
+    description: "Database schema design, database optimization and querying.",
   },
   {
     icon: <RxReader />,
-    title: "Copywriting",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "Responsive Design",
+    description:
+      "Adaptation of designs for optimal visualization on different devices.",
   },
   {
     icon: <RxRocket />,
     title: "SEO",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description:
+      "Implementation of practices to improve search engine positioning.",
   },
 ];
 
@@ -68,16 +72,16 @@ const ServiceSlider = () => {
         return (
           <SwiperSlide key={index}>
             <div
-              className="bg-transparent border-white border-2 h-max rounded-2xl px-6 py-8 hover:shadow-xl
+              className="bg-transparent border-white border-2 sm:h-[180px] lg:h-[300px] lg rounded-2xl px-6 py-8 hover:shadow-xl
               flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer 
            transition-all duration-300"
             >
               {/* icon */}
               <div className="text-4xl text-accent mb-4">{service.icon}</div>
               {/* title & description */}
-              <div className="mb-8">
+              <div className="mb-8 ">
                 <div className="mb-2 text-lg">{service.title}</div>
-                <p className="max-w-[350px] leading-normal">
+                <p className="max-w-[350px] leading-normal lg:h-[100px] h-[50px]">
                   {service.description}
                 </p>
               </div>
