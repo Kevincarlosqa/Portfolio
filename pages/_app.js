@@ -32,6 +32,9 @@ function MyApp({ Component, pageProps }) {
           backgroundColor: "white",
         }}
       /> */}
+      <Head>
+        <link rel="shortcut icon" href="/code.svg" />
+      </Head>
       <Layout className="min-h-screen">
         <AnimatePresence mode="wait" className="min-h-screen">
           <motion.div key={router.route} className="min-h-screen">

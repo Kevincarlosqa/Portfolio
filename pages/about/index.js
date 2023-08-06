@@ -22,6 +22,7 @@ import {
   SiNextdotjs,
   SiThreedotjs,
   SiPostgresql,
+  SiTypescript,
 } from "react-icons/si";
 
 //  data
@@ -38,6 +39,7 @@ const aboutData = [
           <FaReact key="react" />,
           <SiNextdotjs key="nextjs" />,
           <SiThreedotjs key="three" />,
+          <SiTypescript key="typescript" />,
         ],
       },
       {
@@ -122,7 +124,7 @@ import CountUp from "react-countup";
 const About = () => {
   const [index, setIndex] = useState(0);
   return (
-    <div className=" pt-40 text-center min-h-screen xl:text-left bg-gradient-to-b  from-[#0B0205] to-[#142f48]">
+    <div className=" pt-40 lg:pt-0 text-center min-h-screen xl:text-left bg-gradient-to-b  from-[#0B0205] to-[#142f48]">
       <Circles />
       {/* avatar img */}
       {/* <motion.div
@@ -139,7 +141,7 @@ const About = () => {
         xl:flex-row gap-x-6"
       >
         {/* text */}
-        <div className="flex-1 flex flex-col justify-center">
+        <div className="flex-1 flex flex-col justify-center mb-7">
           <motion.h2
             variants={fadeIn("right", 0.2)}
             initial="hidden"
@@ -179,9 +181,9 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex flex-col w-full xl:max-w-[48%] xl:h-[480px] min-h-screen"
+          className="flex flex-col items-center w-full xl:max-w-[48%] xl:h-[480px] lg:min-h-screen h-[450px] lg:mt-[200px] "
         >
-          <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
+          <div className="flex  gap-x-4 xl:gap-x-8  xl:mx-0 mb-4  ">
             {aboutData.map((item, itemIndex) => (
               <div
                 key={itemIndex}
@@ -199,17 +201,19 @@ const About = () => {
           </div>
           <div
             className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4
-            items-center xl:items-start"
+            items-center  xl:items-start"
           >
             {aboutData[index].info.map((item, itemInd) => (
               <div
                 key={itemInd}
-                className="flex-1 flex flex-col md:flex-row 
+                className="flex-1 flex flex-col mx-auto
               max-w-max gap-x-2 items-center text-white/60"
               >
                 {/* title */}
-                <div className="font-light mb-2 md:mb-0">{item.title}</div>
-                <div className="hidden md:flex">-</div>
+                <div className="font-semibold text-accent mb-2 md:mb-0">
+                  {item.title}
+                </div>
+                {/* <div className="hidden md:flex">-</div> */}
                 <div>{item.stage}</div>
                 <div className="flex gap-x-4">
                   {/* icons */}
