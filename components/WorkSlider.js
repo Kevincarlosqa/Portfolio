@@ -50,7 +50,7 @@ const workSlides = {
       images: [
         {
           title: "AIGearHub",
-          path: "/aigearhub.png",
+          path: "/aigearhub.webp",
           description:
             "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
           stack: [
@@ -60,6 +60,8 @@ const workSlides = {
             <SiNextdotjs key="next" />,
             <SiOpenai key="openai" />,
           ],
+          repo: "https://github.com/Kevincarlosqa/AIToolProject",
+          link: "https://aigearhub.vercel.app/",
         },
       ],
     },
@@ -67,7 +69,7 @@ const workSlides = {
       images: [
         {
           title: "Imperium Gym",
-          path: "/imperiumgym.png",
+          path: "/imperiumgym.webp",
           description:
             "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
           stack: [
@@ -86,7 +88,7 @@ const workSlides = {
       images: [
         {
           title: "Get That Job - API",
-          path: "/getthatjob-api.png",
+          path: "/getthatjob-api.webp",
           description:
             "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
           stack: [
@@ -102,7 +104,7 @@ const workSlides = {
       images: [
         {
           title: "Get That Job",
-          path: "/gethatjob.png",
+          path: "/gethatjob.webp",
           description:
             "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
           stack: [
@@ -112,7 +114,7 @@ const workSlides = {
             // <SiStyledcomponents key="emotion" />,
           ],
           repo: "https://github.com/Kevincarlosqa/GetThatJob",
-          link: "https://kevincarlosqa-blog.netlify.app/portfolio.html",
+          // link: "https://kevincarlosqa-blog.netlify.app/portfolio.html",
         },
       ],
     },
@@ -121,7 +123,7 @@ const workSlides = {
       images: [
         {
           title: "Articles",
-          path: "/html.png",
+          path: "/html.webp",
           description:
             "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
           stack: [<FaCss3 key="css" />, <FaHtml5 key="hmtl" />],
@@ -135,7 +137,7 @@ const workSlides = {
       images: [
         {
           title: "Portfolio",
-          path: "/portfolio.png",
+          path: "/portfolio.webp",
           description:
             "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
           stack: [
@@ -147,7 +149,8 @@ const workSlides = {
             <SiTailwindcss key="tailwind" />,
             <SiThreedotjs key="three" />,
           ],
-          repo: "",
+          repo: "https://github.com/Kevincarlosqa/Portfolio",
+          link: "https://www.kevincarlosqa.dev/",
         },
       ],
     },
@@ -155,7 +158,7 @@ const workSlides = {
       images: [
         {
           title: "Personal Blog",
-          path: "/blog.png",
+          path: "/blog.webp",
           description:
             "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
           stack: [
@@ -165,6 +168,8 @@ const workSlides = {
             <SiNextdotjs key="next" />,
             <SiTailwindcss key="tailwind" />,
           ],
+          repo: "https://github.com/Kevincarlosqa/Blog",
+          link: "https://kevincarlosqa-blog.vercel.app/",
         },
       ],
     },
@@ -172,7 +177,7 @@ const workSlides = {
       images: [
         {
           title: "Tweetable",
-          path: "/tweetable.png",
+          path: "/tweetable.webp",
           description:
             "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
           stack: [
@@ -222,13 +227,17 @@ const WorkSlider = () => {
             key={index}
             className="border-white border-2 rounded-3xl px-3 py-3"
           >
-            <div className="  gap-4 cursor-pointer">
+            <div className="  gap-4">
               {slide.images.map((image, indexImg) => (
                 <div
                   key={indexImg}
                   className=" overflow-hidden items-center justify-center flex flex-col "
                 >
-                  <div className="flex rounded-xl items-center justify-center relative overflow-hidden group ">
+                  <Link
+                    href={image.link ? image.link : image.repo}
+                    target="_blank"
+                    className="flex rounded-xl items-center justify-center relative overflow-hidden group cursor-pointer"
+                  >
                     {/* image */}
                     <Image src={image.path} alt="" width={500} height={300} />
 
@@ -258,7 +267,7 @@ const WorkSlider = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </Link>
                   <div className="text-accent text-2xl font-bold py-2 mt-2">
                     <h1>{image.title}</h1>
                   </div>
