@@ -26,6 +26,11 @@ import {
   SiTailwindcss,
   SiStyledcomponents,
   SiThreedotjs,
+  SiRuby,
+  SiRubyonrails,
+  SiPostgresql,
+  SiTypescript,
+  SiOpenai,
 } from "react-icons/si";
 
 // import required modules
@@ -44,16 +49,16 @@ const workSlides = {
     {
       images: [
         {
-          title: "Title",
-          path: "/thumb4.jpg",
+          title: "AIGearHub",
+          path: "/aigearhub.png",
           description:
             "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
           stack: [
             <FaCss3 key="css" />,
-            <FaHtml5 key="hmtl" />,
+            <SiTypescript key="ts" />,
             <FaReact key="react" />,
             <SiNextdotjs key="next" />,
-            <SiFramer key="frame" />,
+            <SiOpenai key="openai" />,
           ],
         },
       ],
@@ -80,13 +85,16 @@ const workSlides = {
     {
       images: [
         {
-          title: "Articles",
-          path: "/html.png",
+          title: "Get That Job - API",
+          path: "/getthatjob-api.png",
           description:
             "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-          stack: [<FaCss3 key="css" />, <FaHtml5 key="hmtl" />],
-          repo: "https://github.com/Kevincarlosqa/Blog-UI",
-          link: "https://kevincarlosqa-blog.netlify.app/portfolio.html",
+          stack: [
+            <SiRuby key="ruby" />,
+            <SiRubyonrails key="rails" />,
+            <SiPostgresql key="postgres" />,
+          ],
+          repo: "https://github.com/Kevincarlosqa/GetThatJob-API",
         },
       ],
     },
@@ -112,21 +120,17 @@ const workSlides = {
     {
       images: [
         {
-          title: "Get That Job - API",
-          path: "/getthatjob-api.png",
+          title: "Articles",
+          path: "/html.png",
           description:
             "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-          stack: [
-            <FaCss3 key="css" />,
-            <FaHtml5 key="hmtl" />,
-            <FaReact key="react" />,
-            <SiNextdotjs key="next" />,
-            <SiFramer key="frame" />,
-          ],
-          repo: "https://github.com/Kevincarlosqa/GetThatJob-API",
+          stack: [<FaCss3 key="css" />, <FaHtml5 key="hmtl" />],
+          repo: "https://github.com/Kevincarlosqa/Blog-UI",
+          link: "https://kevincarlosqa-blog.netlify.app/portfolio.html",
         },
       ],
     },
+
     {
       images: [
         {
@@ -150,8 +154,8 @@ const workSlides = {
     {
       images: [
         {
-          title: "Title",
-          path: "/thumb4.jpg",
+          title: "Personal Blog",
+          path: "/blog.png",
           description:
             "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
           stack: [
@@ -159,8 +163,26 @@ const workSlides = {
             <FaHtml5 key="hmtl" />,
             <FaReact key="react" />,
             <SiNextdotjs key="next" />,
-            <SiFramer key="frame" />,
+            <SiTailwindcss key="tailwind" />,
           ],
+        },
+      ],
+    },
+    {
+      images: [
+        {
+          title: "Tweetable",
+          path: "/tweetable.png",
+          description:
+            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+          stack: [
+            <FaCss3 key="css" />,
+            <FaHtml5 key="hmtl" />,
+            <SiRuby key="ruby" />,
+            <SiRubyonrails key="rails" />,
+            <SiPostgresql key="postgres" />,
+          ],
+          repo: "https://github.com/Kevincarlosqa/Tweetable",
         },
       ],
     },
