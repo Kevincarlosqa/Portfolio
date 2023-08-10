@@ -52,7 +52,7 @@ const workSlides = {
           title: "AIGearHub",
           path: "/aigearhub.webp",
           description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "SaaS project using OpenAI API and ReplicateAPI with authentication using Clerk and payment gateway with subscriptions using Stripe. Responsive design and styling with tailwind CSS.",
           stack: [
             <FaCss3 key="css" />,
             <SiTypescript key="ts" />,
@@ -71,7 +71,7 @@ const workSlides = {
           title: "Imperium Gym",
           path: "/imperiumgym.webp",
           description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "Gym website with an attractive and fully responsive design. Animations made with framer motion and sending messages via email using EmailJS.",
           stack: [
             <FaCss3 key="css" />,
             <FaHtml5 key="hmtl" />,
@@ -90,7 +90,7 @@ const workSlides = {
           title: "Get That Job - API",
           path: "/getthatjob-api.webp",
           description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "Full stack project developed to connect recruiters and professionals, recruiters can post jobs and track applications, professionals can apply for jobs and see the status of applications.",
           stack: [
             <SiRuby key="ruby" />,
             <SiRubyonrails key="rails" />,
@@ -106,7 +106,7 @@ const workSlides = {
           title: "Get That Job",
           path: "/gethatjob.webp",
           description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "Full stack project developed to connect recruiters and professionals, recruiters can post jobs and track applications, professionals can apply for jobs and see the status of applications.",
           stack: [
             <FaCss3 key="css" />,
             <FaHtml5 key="hmtl" />,
@@ -125,7 +125,7 @@ const workSlides = {
           title: "Articles",
           path: "/html.webp",
           description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "Html and css layout project for sharing my articles and some projects.",
           stack: [<FaCss3 key="css" />, <FaHtml5 key="hmtl" />],
           repo: "https://github.com/Kevincarlosqa/Blog-UI",
           link: "https://kevincarlosqa-blog.netlify.app/portfolio.html",
@@ -139,7 +139,7 @@ const workSlides = {
           title: "Portfolio",
           path: "/portfolio.webp",
           description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "Modern website to showcase personal projects, with an attractive design and links to the corresponding repositories on Github, providing an intuitive way to explore personal work and learn about technical skills applied.",
           stack: [
             // <FaCss3 key="css" />,
             // <FaHtml5 key="hmtl" />,
@@ -160,7 +160,7 @@ const workSlides = {
           title: "Personal Blog",
           path: "/blog.webp",
           description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "Project with a grapql based database using hygraphcms to share what I have learned in the technology sector.",
           stack: [
             <FaCss3 key="css" />,
             <FaHtml5 key="hmtl" />,
@@ -179,7 +179,7 @@ const workSlides = {
           title: "Tweetable",
           path: "/tweetable.webp",
           description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "Twitter simulation with user interface and authentication with Github (Omniauth) that adds an additional security aspect, each user can create, delete, edit and like Tweets.",
           stack: [
             <FaCss3 key="css" />,
             <FaHtml5 key="hmtl" />,
@@ -239,7 +239,7 @@ const WorkSlider = () => {
                     className="flex rounded-xl items-center justify-center relative overflow-hidden group cursor-pointer"
                   >
                     {/* image */}
-                    <Image src={image.path} alt="" width={500} height={300} />
+                    <Image src={image.path} alt="" width={500} height={200} />
 
                     {/* overlay gradient */}
                     <div
@@ -272,7 +272,9 @@ const WorkSlider = () => {
                     <h1>{image.title}</h1>
                   </div>
                   <div>
-                    <p className="text-sm text-center">{image.description}</p>
+                    <p className="text-sm text-center min-h-[120px]">
+                      {image.description}
+                    </p>
                   </div>
                   <div className="flex flex-row gap-5">
                     {image.stack.map((icon, index) => (
