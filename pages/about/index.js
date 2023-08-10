@@ -120,11 +120,13 @@ import Circles from "../../components/Circles";
 
 // counter
 import CountUp from "react-countup";
+import Socials from "../../components/Socials";
+import Link from "next/link";
 
 const About = () => {
   const [index, setIndex] = useState(0);
   return (
-    <div className=" pt-40 lg:pt-0 text-center min-h-screen xl:text-left bg-gradient-to-b  from-[#0B0205] to-[#142f48]">
+    <div className=" pt-[130px]   lg:pt-0 text-center xl:max-h-screen  min-h-screen  xl:text-left bg-gradient-to-b  from-[#0B0205] to-[#142f48]">
       <Circles />
       {/* avatar img */}
       {/* <motion.div
@@ -137,17 +139,17 @@ const About = () => {
         <Avatar />
       </motion.div> */}
       <div
-        className="container mx-auto  min-h-screen flex flex-col items-center
+        className="container mx-auto  xl:h-[850px] h-[1000px]  flex flex-col items-center
         xl:flex-row gap-x-6"
       >
         {/* text */}
-        <div className="flex-1 flex flex-col justify-center mb-7">
+        <div className=" flex-1 flex items-center flex-col justify-center mb-7">
           <motion.h2
             variants={fadeIn("right", 0.2)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h2"
+            className="h2 text-center"
           >
             Merging <span className="text-accent">passion and code </span>
             for cutting-edge web development.
@@ -157,21 +159,52 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
+            className="max-w-[500px] text-center mx-auto xl:mx-0 mb-10 xl:mb-12 px-2 xl:px-0"
           >
             I am passionate about technology and its ability to transform our
             lives. With a background in Mechatronics Engineering and experience
             in Full-Stack web development, I have acquired a diverse set of
             skills to build complete applications and solutions.
           </motion.p>
-          <div className="w-[200px] mx-auto shadow-xl border rounded-xl">
-            <Image
-              src="/profile.png"
-              width={200}
-              height={200}
-              alt=""
-              className="rounded-xl"
-            />
+          <div className="h-auto mt-7 flex justify-center items-center">
+            <div className="card relative w-[350px] h-[170px] bg-white hover:h-[300px] transition-all duration-500">
+              <div className="lines" />
+              <div className="imgBx">
+                <Image src="/profile.jpeg" width={200} height={200} alt="" />
+              </div>
+              <div className="content">
+                <div className="details">
+                  <h2 className="text-accent font-semibold">
+                    Kevin Quispe
+                    {/* <br> */}
+                    <br />
+                    <span className="text-white font-light">
+                      Full Stack Web Developer
+                    </span>
+                  </h2>
+                  <div className="flex justify-center m-[10px] mb-5">
+                    <Socials />
+                  </div>
+                  <div>
+                    <Link
+                      className="border p-1 px-3 rounded-xl transition-all duration-500 hover:text-accent hover:bg-black/30"
+                      href=""
+                    >
+                      Download CV
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              {/* <div className="w-[200px] mx-auto shadow-xl border rounded-xl">
+                <Image
+                  src="/profile.png"
+                  width={200}
+                  height={200}
+                  alt=""
+                  className="rounded-xl"
+                />
+              </div> */}
+            </div>
           </div>
           {/* counters */}
         </div>
@@ -181,7 +214,7 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex flex-col items-center w-full xl:max-w-[48%] xl:h-[480px] lg:min-h-screen h-[450px] lg:mt-[200px] "
+          className="flex flex-col items-center w-full xl:max-w-[48%] xl:h-[480px] lg:min-h-screen h-[450px] lg:mt-[400px] xl:px-10 px-0"
         >
           <div className="flex  gap-x-4 xl:gap-x-8  xl:mx-0 mb-4  ">
             {aboutData.map((item, itemIndex) => (
@@ -206,7 +239,7 @@ const About = () => {
             {aboutData[index].info.map((item, itemInd) => (
               <div
                 key={itemInd}
-                className="flex-1 flex flex-col mx-auto
+                className="flex-1 flex flex-col mx-auto text-center
               max-w-max gap-x-2 items-center text-white/60"
               >
                 {/* title */}
