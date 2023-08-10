@@ -82,10 +82,14 @@ body {
   }
 }
 
+/*
+*  Profile Card About
+*/
+
 .card .lines {
   position: absolute;
   inset: 0;
-  background: black;
+  background: #0d1e2f;
   overflow: hidden;
 }
 
@@ -130,7 +134,7 @@ body {
   transform: translateX(-50%);
   width: 150px;
   height: 150px;
-  background: #000;
+  background: #0d1e2f;
   transition: 0.5s;
   z-index: 10;
   overflow: hidden;
@@ -210,4 +214,59 @@ body {
 
 .card:hover .content .details {
   transform: translateY(0px);
+}
+
+/*
+* Services Card
+*/
+
+.box {
+  position: relative;
+  background: #1c1c1c;
+  overflow: hidden;
+  /* width: 230px; */
+  height: 180px;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  scale: 110%;
+  /* width: 230px;
+  height: 300px; */
+  background: linear-gradient(60deg, transparent, #0dc6ab, #0dc6ab);
+  transform-origin: bottom right;
+  animation: animate3 6s linear infinite;
+}
+
+/* .box::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 400px;
+  scale: 110%;
+  background: linear-gradient(60deg, transparent, #45f3ff, #45f3ff);
+  transform-origin: bottom right;
+  animation: animate3 6s linear infinite;
+  animation-delay: -3s;
+} */
+
+@keyframes animate3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.boxEffect {
+  position: absolute;
+  inset: 2px;
+  border-radius: 17px;
+  background: #151e28;
+  z-index: 10;
 }

@@ -72,25 +72,27 @@ const ServiceSlider = () => {
         return (
           <SwiperSlide key={index}>
             <div
-              className="bg-transparent border-white border-2 sm:h-[180px] lg:h-[300px] lg rounded-2xl px-6 py-8 hover:shadow-xl
+              className="box bg-transparent sm:h-[180px] lg:h-[300px] lg rounded-2xl px-6 py-8 hover:shadow-xl
               flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer 
-           transition-all duration-300"
+           transition-all duration-300 after:w-[340px] after:h-[180px] before:w-[340px] before:h-[180px] xl:after:w-[240px] xl:after:h-[300px] xl:before:w-[240px] xl:before:h-[300px]"
             >
               {/* icon */}
-              <div className="text-4xl text-accent mb-4">{service.icon}</div>
-              {/* title & description */}
-              <div className="mb-8 ">
-                <div className="mb-2 text-lg">{service.title}</div>
-                <p className="max-w-[350px] leading-normal lg:h-[100px] h-[50px]">
-                  {service.description}
-                </p>
-              </div>
-              {/* arrow */}
-              <div className="text-3xl">
-                <RxArrowTopRight
-                  className="group-hover:rotate-45
+              <div className="boxEffect  px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0">
+                <div className="text-4xl text-accent mb-4">{service.icon}</div>
+                {/* title & description */}
+                <div className="mb-8 ">
+                  <div className="mb-2 text-lg">{service.title}</div>
+                  <p className="max-w-[350px] leading-normal lg:h-[100px] h-[50px]">
+                    {service.description}
+                  </p>
+                </div>
+                {/* arrow */}
+                <div className="text-3xl">
+                  <RxArrowTopRight
+                    className="group-hover:rotate-45
                 group-hover:text-accent transition-all duration-300"
-                />
+                  />
+                </div>
               </div>
             </div>
           </SwiperSlide>
