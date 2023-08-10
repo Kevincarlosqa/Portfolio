@@ -188,7 +188,8 @@ const About = () => {
                   <div>
                     <Link
                       className="border p-1 px-3 rounded-xl transition-all duration-500 hover:text-accent hover:bg-black/30"
-                      href=""
+                      href="/CV.pdf"
+                      target="_blank"
                     >
                       Download CV
                     </Link>
