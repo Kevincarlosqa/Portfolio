@@ -77,7 +77,7 @@ const ServiceSlider = () => {
            transition-all duration-300 after:w-[340px] after:h-[180px] before:w-[340px] before:h-[180px] xl:after:w-[240px] xl:after:h-[300px] xl:before:w-[240px] xl:before:h-[300px]"
             >
               {/* icon */}
-              <div className="boxEffect  px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0">
+              <div className="boxEffect  px-6 py-8 flex sm:flex-col gap-x-5 sm:gap-x-0">
                 <div className="text-4xl text-accent mb-4">{service.icon}</div>
                 {/* title & description */}
                 <div className="mb-8 ">
