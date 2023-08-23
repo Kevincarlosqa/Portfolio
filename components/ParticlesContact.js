@@ -1,6 +1,6 @@
 import { Particles } from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import React, { useCallback } from "react";
+import React, { memo, useCallback } from "react";
 
 const ParticlesContact = () => {
   // init
@@ -104,4 +104,4 @@ const ParticlesContact = () => {
   );
 };
 
-export default ParticlesContact;
+export default memo(ParticlesContact);
