@@ -4,7 +4,7 @@ const CanvasLoader = () => {
   const { progress } = useProgress();
   return (
     <Html>
-      <span className="canvas-load"></span>
+      {/* <span className="canvas-load"></span> */}
       <p
         style={{
           fontSize: 14,

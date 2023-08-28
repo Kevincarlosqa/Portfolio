@@ -80,6 +80,10 @@ const aboutData = [
     title: "experience",
     info: [
       {
+        title: "Crack The Code",
+        stage: "2023",
+      },
+      {
         title: "Smugglers’ Notch Resort",
         stage: "2018",
       },
