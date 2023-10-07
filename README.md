@@ -6,7 +6,10 @@ Modern website to showcase my personal projects 🖥️, with an attractive desi
 - **Demo:** [kevincarlosqa.dev](https://www.kevincarlosqa.dev/)
 - **Repository:** [Link to the project github](https://github.com/Kevincarlosqa/Portfolio)
 
-<img src="https://i.ibb.co/gtxDLCT/160shots-so.png" alt="160shots-so" border="0">
+<p align="center">
+  <img src="https://i.ibb.co/gtxDLCT/160shots-so.png" alt="160shots-so" width="50%">
+</p>
+
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://katherineoelsner.com/)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/)
