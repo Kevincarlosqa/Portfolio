@@ -61,12 +61,12 @@ const aboutData = [
       {
         title: "Codeable",
         description:
-          "Intensive full-stack web development educational program (full time, 6 months)",
+          "Intensive full-stack web development educational program",
         stage: "Lima, Peru - 2023",
       },
       {
         title: "Universidad Catolica de Santa Maria (UCSM)",
-        description: "Bachelor in Mechatronics Engineering",
+        description: "Mechatronics Engineer",
         stage: "2013 - 2021",
       },
       {
@@ -80,17 +80,29 @@ const aboutData = [
     title: "experience",
     info: [
       {
+        title: "Parkner",
+        description: "Full Stack Web Developer",
+        stage: "2024",
+      },
+      {
         title: "Crack The Code",
-        stage: "2023",
+        description: "Data Analyst / Product Operations Assistant",
+        stage: "2023-2024",
       },
       {
         title: "Smugglers’ Notch Resort",
+        description: "Housekeeper",
         stage: "2018",
       },
       {
         title: "Sergear S.A.C.",
+        description: "DTI - Toquepala Branch",
         stage: " 2014 – 2015",
       },
+      // {
+      //   title: "Clinica Siempre Mujer",
+      //   stage: "2024",
+      // },
       // {
       //   title: "Web Developer - ABC Agency",
       //   stage: "2023 - 2023",
@@ -143,7 +155,7 @@ const About = () => {
         <Avatar />
       </motion.div> */}
       <div
-        className="container mx-auto  xl:h-[850px] h-[1000px]  flex flex-col items-center
+        className="container mx-auto  xl:h-[800px] h-[1000px]  flex flex-col items-center
         xl:flex-row gap-x-6"
       >
         {/* text */}
@@ -219,17 +231,16 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex flex-col items-center w-full xl:max-w-[48%] xl:h-[480px] lg:min-h-screen h-[450px] lg:mt-[400px] xl:px-10 px-0"
+          className="flex flex-col items-center w-full xl:max-w-[48%] xl:h-[480px] lg:min-h-screen h-[450px] lg:mt-[300px] xl:px-10 px-0"
         >
           <div className="flex  gap-x-4 xl:gap-x-8  xl:mx-0 mb-4  ">
             {aboutData.map((item, itemIndex) => (
               <div
                 key={itemIndex}
-                className={`${
-                  index === itemIndex
-                    ? "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
-                    : "after:bg-white "
-                } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] 
+                className={`${index === itemIndex
+                  ? "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
+                  : "after:bg-white "
+                  } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] 
               after:absolute after:-bottom-1 after:left-0 `}
                 onClick={() => setIndex(itemIndex)}
               >
@@ -251,6 +262,7 @@ const About = () => {
                 <div className="font-semibold text-accent mb-2 md:mb-0">
                   {item.title}
                 </div>
+                {item.description && <p className="text-white">{item.description}</p>}
                 {/* <div className="hidden md:flex">-</div> */}
                 <div>{item.stage}</div>
                 <div className="flex gap-x-4">

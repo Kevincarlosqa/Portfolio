@@ -1,5 +1,6 @@
 // next image
 import Image from "next/image";
+import Link from "next/link";
 // import Lottie from "lottie-react";
 // import base from "../public/laptop.json";
 
@@ -67,6 +68,14 @@ const Home = () => {
             Mechatronics Engineering, where I had the opportunity to explore
             programming.
           </motion.p>
+          <Link
+            className="lg:ml-[230px] z-10  mt-0 xl:flex mb-10 text-accent font-bold text-xl transition duration-300 ease-in-out  hover:opacity-80 animate-pulse"
+            href="/CV.pdf"
+            target="_blank"
+          >
+            Download my CV
+          </Link>
+
 
           {/* btn */}
           <motion.div
@@ -90,6 +99,7 @@ const Home = () => {
               <Lottie animationData={base} />
             </div> */}
           </motion.div>
+
         </div>
       </div>
       {/* image */}

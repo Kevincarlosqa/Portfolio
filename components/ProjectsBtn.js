@@ -12,7 +12,7 @@ import { HiArrowRight } from "react-icons/hi2";
 
 const ProjectsBtn = () => {
   return (
-    <div className="mx-auto lg:w-auto w-[270px] xl:mx-0 lg:z-50 z-[100] border rounded-2xl hover:bg-black/30 ">
+    <div className="mx-auto lg:w-auto w-[270px] xl:mx-0 lg:z-50 z-[100] border border-2 rounded-2xl hover:bg-black/30 ">
       <Link
         href="/work"
         className="relative  h-[50px] xl:w-[250px] xl:h-[50px] px-3 flex 
