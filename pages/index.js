@@ -68,13 +68,7 @@ const Home = () => {
             Mechatronics Engineering, where I had the opportunity to explore
             programming.
           </motion.p>
-          <Link
-            className="lg:ml-[230px] z-10  mt-0 xl:flex mb-10 text-accent font-bold text-xl transition duration-300 ease-in-out  hover:opacity-80 animate-pulse"
-            href="/CV.pdf"
-            target="_blank"
-          >
-            Download my CV
-          </Link>
+
 
 
           {/* btn */}
@@ -83,21 +77,27 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="flex justify-center xl:hidden  "
+            className="lg:ml-[200px] mb-[20px] z-10 lg:mt-8 mt-0 xl:flex"
           >
-            {/* <ProjectsBtn className="" /> */}
+            <ProjectsBtn />
+            {/* <div style={{ width: "250px", height: "250px" }}>
+              <Lottie animationData={base} />
+            </div> */}
           </motion.div>
           <motion.div
             variants={fadeIn("down", 0.4)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="lg:ml-[200px] mb-[90px] z-10 lg:mt-10 mt-0 xl:flex"
+            className=" z-10 mt-0 xl:flex xl:mb-0 mb-[100px]"
           >
-            <ProjectsBtn />
-            {/* <div style={{ width: "250px", height: "250px" }}>
-              <Lottie animationData={base} />
-            </div> */}
+            <Link
+              className="lg:ml-[245px] z-10 xl:flex mb-10 text-accent font-bold text-lg transition duration-300 ease-in-out  hover:opacity-80 animate-pulse"
+              href="/CV.pdf"
+              target="_blank"
+            >
+              Download my CV
+            </Link>
           </motion.div>
 
         </div>
