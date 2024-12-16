@@ -52,7 +52,7 @@ const Home = () => {
           >
             Connecting code and creativity,
             <br /> The power of a{" "}
-            <span className="text-accent">Full Stack Web Developer</span>
+            <span className="text-accent">Software Developer</span>
           </motion.h1>
           {/* subtitle */}
           <motion.p
@@ -93,7 +93,7 @@ const Home = () => {
           >
             <Link
               className="lg:ml-[245px] z-10 xl:flex mb-10 text-accent font-bold text-lg transition duration-300 ease-in-out  hover:opacity-80 animate-pulse"
-              href="/CV.pdf"
+              href="/CVKevin.pdf"
               target="_blank"
             >
               Download my CV
