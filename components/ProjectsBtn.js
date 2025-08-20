@@ -1,10 +1,12 @@
 // next image
 import Image from "next/image";
-
+import dynamic from "next/dynamic";
 // next link
 import Link from "next/link";
 
-import Lottie from "lottie-react";
+const Lottie = dynamic(() => import("lottie-react"), {
+  ssr: false,
+});
 import base from "../public/projects.json";
 
 // icons
